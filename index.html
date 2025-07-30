@@ -1,11 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hiprosoft - Empowering Your Business</title>
-  <meta name="description" content="Hiprosoft is a leading provider of IT services and staffing solutions.">
+  <meta name="description" content="Hiprosoft offers IT consulting, staffing, and cloud solutions to empower your business." />
+  <meta name="keywords" content="Hiprosoft, IT consulting, staffing solutions, cloud services, managed services" />
+  <meta property="og:title" content="Hiprosoft - Empowering Your Business" />
+  <meta property="og:description" content="Expert IT services and staffing solutions to drive your success." />
+  <meta property="og:type" content="website" />
   <style>
     body {
       margin: 0;
@@ -20,6 +23,11 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
     }
     nav a {
       color: white;
@@ -27,24 +35,60 @@
       text-decoration: none;
     }
     .hero {
-      background: url('https://source.unsplash.com/1600x600/?technology') center/cover no-repeat;
+      background: url('https://source.unsplash.com/1600x600/?technology,teamwork') center/cover no-repeat;
       padding: 6rem 2rem;
       color: white;
       text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
     .section {
       padding: 3rem 2rem;
       background: white;
       margin: 1rem 0;
     }
-    .contact p {
-      margin: 0.5rem 0;
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #0a1f44;
+    }
+    .services ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
     footer {
       background: #0a1f44;
       color: white;
       text-align: center;
       padding: 1rem 2rem;
+    }
+    .contact p {
+      margin: 0.5rem 0;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background-color: #0a1f44;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+    }
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+      header, nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -63,7 +107,7 @@
     <p>Innovative IT Services & Staffing Solutions</p>
   </section>
 
-  <section class="section" id="services">
+  <section class="section services" id="services">
     <h3>IT Services And Staffing</h3>
     <ul>
       <li>IT Consulting</li>
@@ -73,20 +117,29 @@
     </ul>
   </section>
 
-  <section class="section" id="about">
+  <section class="section about" id="about">
     <h3>About Us</h3>
     <p>Hiprosoft is a leading provider of IT services and staffing solutions. We specialize in delivering innovative technology solutions and top-tier talent to help businesses achieve their goals.</p>
   </section>
 
   <section class="section contact" id="contact">
     <h3>Contact Us</h3>
+    <form action="https://formsubmit.co/youremail@example.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
     <p>Email: info@hiprosoft.com</p>
-    <p>Phone: [Your Phone Number Here]</p>
     <p>Address: 12658 Shetland Walk Drive, Lithia 33547</p>
   </section>
 
   <footer>
     &copy; 2024 Hiprosoft. All rights reserved.
   </footer>
+
+  <!-- Tawk.to Chat Widget Placeholder -->
+  <!-- Replace this with your actual script from Tawk.to -->
 </body>
 </html>
